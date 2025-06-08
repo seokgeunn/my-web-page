@@ -177,6 +177,36 @@
   footer{
     background-color: #111;
     color: #888;
+    max-width: 1920px;
+    margin-top: 300px;
+    margin-bottom: 23px;
+    text-align: center;
+  }
+
+  #footertitle{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: clamp(10pt, 1vw, 16pt);
+
+  }
+
+  #name {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: regular;
+  font-size: 12pt;
+  margin-top: 8px;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  }
+
+  #name > #ysy{
+  font-size: 14pt;
+  line-height: 1;
+  text-decoration: underline;
+  } 
+
   }
 
   }
@@ -246,7 +276,14 @@
   </section>
 
   <footer>
-    박석근
+    <div id="footertitle">제작</div>
+            <div id="name">
+              <div id="cwj">최우진</div>
+              <div id="ysy">양서영</div>
+              <div id="ssz">손승재</div>
+              <div id="psg">박석근</div>
+              <div id="jhj">전휘재</div>
+            </div>
   </footer>
 
   <script>
