@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>이질성과 그 비평적 시공간</title>
   <style>
     body {
+      max-width: 1920px;
       font-family: sans-serif;
       color: black;
-      margin-bottom: 100px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 0 100px;
+      margin: 0 auto;
     }
 
+        /* 다크모드 */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #111;
+      color:#a9a9a9;
+    }
+
+  /* 본문 영어부분 */
+    span, .right-caption, .left-caption { 
+      color: #7c7c7c !important;
+  }
+  }
+
     .header {
-      max-width: 1640px;
       margin-top: 23px;
       margin-left: auto;
       margin-right: auto;
@@ -62,38 +75,6 @@
       color: #454545;
     }
 
-    footer{
-
-    max-width: 1920px;
-    margin-top: 300px;
-    margin-bottom: 23px;
-    text-align: center;
-  }
-
-  #footertitle{
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight: bold;
-  font-size: clamp(10pt, 1vw, 16pt);
-
-  }
-
-  #name {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight: regular;
-  font-size: 12pt;
-  margin-top: 8px;
-  display:flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  }
-
-  #name > #psg{
-  font-size: 14pt;
-  line-height: 1;
-  text-decoration: underline;
-  }
-
     .text-columns {
       display: flex;
       flex-direction: row;
@@ -115,12 +96,8 @@
     }
 
     #article {
-      max-width: 1440px;
-      margin-left: auto;
-      margin-right: auto;
-      min-width: 600px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 0 50px;
+      margin: 0 auto;
     }
 
     .image-with-caption img {
@@ -157,7 +134,6 @@
       line-height: 1.4;
     }
 
-    
     .image-and-korean-text {
       display: flex;
       flex-wrap: wrap;
@@ -188,19 +164,44 @@
       min-width: 300px;
     }
 
-    /* 다크모드 */
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: #111;
-      color:#a9a9a9;
-    }
 
-  /* 본문 영어부분 */
-    #articleen { 
-      color: #7c7c7c !important;
+  footer{
+    margin-top: 300px;
+    margin-bottom: 23px;
+    text-align: center;
   }
+
+  #footertitle{
+  font-weight: bold;
+  font-size: clamp(10pt, 1vw, 16pt);
+
   }
-  
+
+  #name {
+  font-weight: regular;
+  font-size: clamp(8pt, 1vw, 12pt);
+  margin-top: 8px;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  }
+
+  #name > #psg{
+  font-size: clamp(10pt, 1vw, 14pt);
+  line-height: 1;
+  text-decoration: underline;
+  } 
+
+  @media screen and (max-width: 768px) {
+  body {
+    padding: 0 20px;
+  }
+
+  #article{
+    padding: 0 10px;
+  }
+}
 
   </style>
 </head>
